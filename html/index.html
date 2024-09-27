@@ -22,7 +22,10 @@
         data-bs-theme="bg-dark"
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar scroll</a>
+          <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
+            <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4z"/>
+            <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+          </svg></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -43,7 +46,7 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#"><i class="bi bi-cup-straw"></i></a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -52,7 +55,7 @@
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
-                  >Link</a
+                  >Activities</a
                 >
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Action</a></li>
@@ -64,7 +67,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Link</a>
+                <a class="nav-link disabled" aria-disabled="true"><i class="bi bi-envelope"></i></a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -88,11 +91,9 @@
         <div class="col-12">
           <h1 class="text-center mb-4">Información turística de Cartagena</h1>
           <p class="lead">
-            Cartagena es una ciudad colombiana ubicada en la costa caribeña del
-            país. Conocida por sus playas, su arquitectura colonial y su
-            vibrante vida nocturna, Cartagena es un destino popular para los
-            turistas.
+            Cartagena es una ciudad colombiana ubicada en la costa caribeña del país. Conocida por sus playas, su arquitectura colonial y su vibrante vida nocturna, Cartagena es un destino popular para los turistas.
           </p>
+          
         </div>
       </div>
 
@@ -125,8 +126,49 @@
             y Playa de la Popa, que son ideales para el buceo, el snorkeling y
             el surf.
           </p>
-          <button class="btn btn-primary">Explorar actividades</button>
+          
         </div>
+        <div class="col">
+          <div class="card h-100">
+              <img src="/img/tour.jpg" class="card-img-top" alt="Tour por la Ciudad Amurallada">
+              <div class="card-body">
+                  <h5 class="card-title">Tour por la Ciudad Amurallada</h5>
+                  <p class="card-text">Explora la historia colonial de Cartagena con un recorrido guiado por sus calles empedradas.</p>
+                  <a href="#" class="btn btn-primary">Más Información</a>
+              </div> 
+          </div>     
+          
+      </div>
+      <div class="col">
+        <div class="card h-100">
+            <img src="/img/boquilla kitesurf.jpg" class="card-img-top" alt="Tour por la Ciudad Amurallada">
+            <div class="card-body">
+                <h5 class="card-title">Kitesurf en las Playas de La Boquilla</h5>
+                <p class="card-text">Disfruta de la adrenalina del kitesurf en una de las playas más populares para deportes acuáticos.</p>
+                <a href="#" class="btn btn-primary">Más Información</a>
+            </div> 
+        </div>     
+    </div>
+    <div class="col">
+      <div class="card h-100">
+          <img src="/img/lancha.jpg" class="card-img-top" alt="Tour por la Ciudad Amurallada">
+          <div class="card-body">
+              <h5 class="card-title">Tour en Lancha a Playa Blanca</h5>
+              <p class="card-text">Escápate a una de las playas más hermosas de Cartagena con arena blanca y aguas cristalinas.</p>
+              <a href="#" class="btn btn-primary">Más Información</a>
+          </div> 
+      </div>     
+  </div>
+  <div class="col">
+    <div class="card h-100">
+        <img src="/img/buceo.avif" class="card-img-top" alt="Tour por la Ciudad Amurallada">
+        <div class="card-body">
+            <h5 class="card-title">Snorkel y Buceo en las Islas del Rosario</h5>
+            <p class="card-text">Explora la vida marina en las aguas tropicales que rodean este hermoso archipiélago.</p>
+            <a href="#" class="btn btn-primary">Más Información</a>
+        </div> 
+    </div>     
+  </div>
       </div>
 
       <div class="row mt-4">
@@ -151,6 +193,45 @@
             
           </p>
         </div>
+        <div class="col">
+          <div class="card h-100">
+              <img src="/img/aeropuerto.jpg" class="card-img-top" alt="Aeropuerto Internacional Rafael Núñez">
+              <div class="card-body">
+                  <h5 class="card-title">Aeropuerto Internacional Rafael Núñez</h5>
+                  <p class="card-text">Principal punto de acceso para turistas internacionales, con vuelos desde América y Europa.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+            <img src="/img/transcaribe.jpg" class="card-img-top" alt="Transcaribe">
+            <div class="card-body">
+                <h5 class="card-title">Transcaribe</h5>
+                <p class="card-text">El sistema de transporte masivo de Cartagena conecta las principales áreas de la ciudad de forma rápida y eficiente.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+          <img src="/img/taxis.jpg" class="card-img-top" alt="Taxis en Cartagena">
+          <div class="card-body">
+              <h5 class="card-title">Taxis y Transporte Privado</h5>
+              <p class="card-text">Una red extensa de taxis y transporte privado está disponible para mayor comodidad de los turistas.</p>
+          </div>
+      </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+        <img src="/img/bici.jpg" class="card-img-top" alt="Alquiler de Bicicletas o Scooters">
+        <div class="card-body">
+            <h5 class="card-title">Alquiler de Bicicletas o Scooters</h5>
+            <p class="card-text">Disfruta de una experiencia ecológica y divertida recorriendo Cartagena en bicicleta o scooter.</p>
+        </div>
+    </div>
+</div>
+
+  
+    
       </div>
 
       <div class="container-fluid">
@@ -340,8 +421,6 @@
             <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
-    
-        <!-- Nueva sección para la presentación de integrantes -->
         <div class="row text-center py-3">
           <div class="col">
             <h5>Integrantes del equipo</h5>
