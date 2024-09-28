@@ -1,3 +1,7 @@
+body{
+  background-color: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -119,4 +123,64 @@ img {
 .card-text {
     font-size: 0.8rem;
 }
+
+#c1 h1{
+  color: #333;
+}
+
+#c1 p{
+  text-align: justify;
+}
+
+#c2 h2{
+  color: #333;
+}
+
+#c2 p{
+  text-align: justify;
+}
+
+#c3 h2{
+  color: #333;
+}
+
+#c3 p{
+  text-align: justify;
+}
+
+#c4 h2{
+  color: #333;
+}
+
+#c4 p{
+  text-align: justify;
+}
+
+#c5 h2{
+  color: #333;
+}
+
+#c5 p{
+  text-align: justify;
+}
+
+#c6 h2{
+  color: #333;
+}
+
+#c6 p{
+  text-align: justify;
+}
+
+#c7 h1{
+  color: #333;
+}
+
+#principal h2{
+  color: #333;
+}
+
+
+
+
 
