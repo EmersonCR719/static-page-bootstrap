@@ -1,445 +1,563 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Información Turística de Cartagena</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  </head>
-  <body>
-    <div class="container-fluid">
-      <nav
-        class="navbar bg-dark navbar-expand-lg bg-body-tertiary"
-        data-bs-theme="bg-dark"
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
-            <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4z"/>
-            <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Información Turística de Cartagena</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+            fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
+            <path
+              d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4z" />
+            <path
+              d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0" />
           </svg></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarScroll"
-            aria-controls="navbarScroll"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul
-              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
-              style="--bs-scroll-height: 100px"
-            >
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="bi bi-cup-straw"></i></a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >Activities</a
-                >
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true"><i class="bi bi-envelope"></i></a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
-          </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-cup-straw"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Activities</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true"><i class="bi bi-envelope"></i></a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
         </div>
-      </nav>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-center mb-4">Información turística de Cartagena</h1>
+        <p class="lead">
+          Cartagena es una ciudad que está ubicada a orillas del Mar Caribe. Sus calles coloridas llenas de encanto la
+          hacen la puerta de entrada a Suramérica. En Colombia, se encuentra al norte del país, y es la capital de la
+          región de Bolívar. "La Heroica", como la llaman, contempla a su alrededor varios archipiélagos e islas que son
+          paraísos para un verdadero descanso.
+
+          Cartagena, suma a sus encantos los atractivos de una intensa vida nocturna, festivales culturales y paisajes
+          exuberantes. Las playas de la ciudad te invitan a hacer turismo, descansar y divertirte con la refrescante
+          brisa y las tibias aguas del mar.
+
+          De la misma manera, El tiempo en Cartagena de Indias es muy agradable, pues su clima tropical te permitirá
+          gozar de sus playas y otros encantos. La temperatura en Cartagena durante todo el año es de 27°C en promedio.
+          Un clima ideal para conocer la ciudad amurallada, los restaurantes, entre otros lugares emblemáticos de "La
+          Heroica".
+
+          Además, Cartagena cuenta con una excelente oferta gastronómica y una importante infraestructura hotelera y
+          turística.
+
+          Este fantástico destino guarda los secretos de la historia en su ciudad amurallada, en sus balcones y en sus
+          angostos caminos de piedra que sirvieron de inspiración a Gabriel García Márquez, ganador del premio Nobel de
+          Literatura en 1982.
+
+          Enmarcada por una hermosa bahía, Cartagena de Indias es una de las ciudades más bellas y mejor conservadas de
+          América; un tesoro que, hoy en día, es uno de los destinos turísticos más visitados de Colombia.
+        </p>
+
+      </div>
     </div>
 
-    <div class="container mt-4">
-      <div class="row">
-        <div class="col-12">
-          <h1 class="text-center mb-4">Información turística de Cartagena</h1>
-          <p class="lead">
-            Cartagena es una ciudad colombiana ubicada en la costa caribeña del país. Conocida por sus playas, su arquitectura colonial y su vibrante vida nocturna, Cartagena es un destino popular para los turistas.
-          </p>
-          
-        </div>
-      </div>
+    <div class="row mt-4">
+      <div class="col-md-12" id="c1">
+        <h2 class="mb-3 text-center">Historia</h2>
+        <p>
+          Cartagena de Indias ha sido una ciudad de glorias a través de todas sus épocas. En el Descubrimiento, primero;
+          luego en la Colonia, más tarde en la Independencia y finalmente en la formación de la República de Colombia.
 
-      <div class="row mt-4">
-        <div class="col-md-12" id="c1">
-          <h2 class="mb-3 text-center">Historia</h2>
-          <p>
-            La historia de Cartagena se remonta a la época de la conquista
-            española en el siglo XVI. La ciudad fue fundada en 1533 por el
-            conquistador Rodrigo de Bastidas y se convirtió en un importante
-            centro comercial y militar.
-          </p>
-        </div>
-        <div class="col-md-12">
-          <h2 class="mb-3 text-center">Cultura</h2>
-          <p>
-            La cultura de Cartagena es una mezcla de influencias españolas,
-            africanas y caribeñas. La ciudad es famosa por su arquitectura
-            colonial, su música y su gastronomía.
-          </p>
-        </div>
-      </div>
+          La bahía de Cartagena fue descubierta en 1501, nueve años después de que Colón hiciera su primer viaje al
+          nuevo mundo, por Rodrigo de Bastidas, escribano de profesión y natural de Sevilla.
 
-      <div class="row mt-4">
-        <div class="col-12">
-          <h2 class="mb-3 text-center">Actividades al aire libre</h2>
-          <p>
-            Cartagena ofrece una amplia gama de actividades al aire libre para
-            los turistas. La ciudad es famosa por sus playas, como Playa Blanca
-            y Playa de la Popa, que son ideales para el buceo, el snorkeling y
-            el surf.
-          </p>
-          
-        </div>
-        <div class="col">
-          <div class="card h-100">
-              <img src="/img/tour.jpg" class="card-img-top" alt="Tour por la Ciudad Amurallada">
-              <div class="card-body">
-                  <h5 class="card-title">Tour por la Ciudad Amurallada</h5>
-                  <p class="card-text">Explora la historia colonial de Cartagena con un recorrido guiado por sus calles empedradas.</p>
-                  <a href="#" class="btn btn-primary">Más Información</a>
-              </div> 
-          </div>     
-          
+          Sin embargo, fue don Pedro de Heredia con los conocimientos adquiridos en la conquista de Santa Marta (ciudad
+          vecina a Cartagena), quien consiguió del monarca Carlos I de España y V de Austria, la Gobernación de la costa
+          (hoy Cartagena) en 1532. Un año después salió de Cádiz rumbo al Mar Caribe con 300 hombres, algunas mujeres y
+          dos predicadores.
+
+          Don Pedro de Heredia era un español de hidalga condición, nacido en Madrid aunque de apellido vasco y
+          ascendencia aragonesa. Con anterioridad, don Pedro de Heredia había visitado el Caribe con Bartolomé Colón, y
+          había pasado una estancia en la ciudad caribeña de Santa Marta como teniente del Gobernador Pedro de Badillo.
+
+          Según el cronista Juan de Castellanos, el 20 de enero de 1533 don Pedro de Heredia fundó Cartagena en el mismo
+          sitio en que los aborígenes caribes habían levanto un poblado llamado Calamarí, que en lengua indígena
+          significa cangrejo, crustáceo que proliferaba por entonces en aquellas tierras.
+
+          Agrega el cronista que Heredia pensó en llamar a la nueva ciudad La Nueva Andalucía, pero prefirió el nombre
+          de Cartagena por la semejanza con la Cartagena del Levante en España.
+
+          Se dice que los indios no opusieron resistencia ante el español y que abandonaron el poblado: «Cuando llegamos
+          no hallamos a nadie dentro, sino los bohíos cerrados; no consentí yo que se les entrase en ninguna casa ni se
+          les tomase nada…» (Pedro de Heredia, 1533).
+
+          No obstante, la leyenda cuenta que una mujer indígena, llamada Catalina sirvió de intérprete entre los
+          pobladores nativos y los españoles recién llegados a América.
+
+          Felipe II, Rey de Castilla y León dio a Cartagena el título de Ciudad, así como un escudo y en 1575, el hijo
+          de Carlos V expidió en Madrid la Real cédula por la cual concedió a la ciudad el título de Muy noble y leal
+          ciudad: «En tantos años, les he hecho casas de cantería y calles tan principales como las hay en España e
+          Iglesia Catedral suntuosa y monasterios de frailes y hospitales principales y les he fortificado en muelle y
+          puerto y les traigo ahora el agua tres leguas de aquí, que será obra romana importantísima, con lo cual dejaré
+          esta ciudad de manera que sea el tercer pueblo de todas las Indias…» (Pedro Fernández de Busto, Gobernador de
+          Cartagena, 1577).
+        </p>
+      </div>
+      <div class="col-md-12">
+        <h2 class="mb-3 text-center">Cultura</h2>
+        <p>
+          Dentro de las costumbres, tradiciones y eventos culturales en la ciudad amurallada, destacan las siguientes
+          festividades, reconocidas internacionalmente:
+
+          Festival Internacional de Música celebrado en el mes de enero: en él se logra reunir a los principales
+          exponentes de la música instrumental (folklore, jazz, latin jazz), también, es una fecha de presentación de
+          libros, por lo cual, se reconoce a Cartagena sede de festival de literatura internacional, conjugado con una
+          serie de conciertos y tertulias literarias durante casi todo enero.
+
+        <h3>Celebración de Nuestra Señora de la Candelaria en febrero</h3>
+        Como muchas muestras folclóricas en toda Colombia, la festividad en torno a la Virgen de la Candelaria, son
+        realmente una muestra auténtica de lo que son las tradiciones y costumbres de Cartagena de Indias. En ella se
+        presenta lo mejor de la gastronomía típica, cabalgatas, bailes típicos, fiestas culturales en honor a la
+        virgen.
+
+        <h3>Festival de Cine y Televisión en Marzo</h3>
+        Reúne los cineastas, actores, músicos y personajes más importantes del mundo del cine y la televisión. Es una
+        época donde se presentan las mejores producciones cinematográficas de Latinoamérica.
+
+        <h3>Cartagena Boat Show, Festival de Artes Escénicas en Abril</h3>
+
+        Otro de las tradiciones por las que miles de turistas van a Cartagena, es el festival de actuación, ya que la
+        industria náutica se reúne en torno a actividades dancísticas y teatrales para mostrar los avances de los
+        equipos náuticos…
+
+        </p>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-12">
+        <h2 class="mb-3 text-center">Actividades al aire libre</h2>
+        <p>
+        <h3>1.Ve hasta la Plaza de los Coches, una de las plazas más bonitas que ver en Cartagena</h3>
+
+        La Plaza de los Coches es una de las plazas más icónicas y concurridas del centro histórico de Cartagena. Su
+        nombre se debe a que en el pasado, los carruajes y coches de caballos se congregaban en esta plaza para
+        transportar a los ciudadanos y visitantes.
+
+        La plaza está rodeada de coloridos edificios coloniales con balcones de hierro forjado y arcos de piedra, que le
+        dan un ambiente colonial y pintoresco. En el centro de la plaza se encuentra una estatua del fundador de
+        Cartagena de Indias, Pedro de Heredia.
+
+        <h3>2.Admira el atardecer desde las murallas de Cartagena</h3>
+        Cartagena de Indias es una ciudad mágica y romántica que ofrece muchas actividades al aire libre para disfrutar
+        de sus hermosos paisajes, y sin duda, una de las más espectaculares es mirar el atardecer desde las murallas que
+        rodean la ciudad amurallada.
+
+        Las murallas de Cartagena son un símbolo de su historia y su cultura, y son un testimonio de la arquitectura
+        militar del siglo XVII. Se pueden recorrer fácilmente a pie, y se puede disfrutar de las hermosas vistas, de las
+        playas y el mar Caribe.
+
+        Una de las mejores cosas que hacer en cartagena de Indias sin duda es mirar el atardecer desde sus murallas,
+        pues es una actividad que cautiva a los turistas y locales por igual. El sol se va ocultando lentamente en el
+        horizonte, creando un espectáculo natural que llena de color el cielo y el mar.
+
+        Una de las mejores vistas es el atardecer desde la Plaza de la Trinidad, donde vas a encontrar turistas,
+        locales, artistas y músicos compartiendo la magia del momento. También se puede disfrutar del atardecer desde la
+        torre del reloj, ubicada en la entrada principal de la ciudad amurallada, o desde la muralla de San Francisco.
+
+        <h3>3.Visita Las hermosas casas de colores en el barrio de Getsemaní</h3>
+        Un lugar que vale la pena visitar en Cartagena de Indias es el barrio de Getsemaní, es una experiencia que no te
+        puedes perder durante tu viaje a Colombia. Este es un lugar mágico, lleno de historia, cultura, arte y vida, que
+        ha sido testigo de la evolución de la ciudad y de la transformación de sus habitantes.
+
+        Getsemaní fue en su momento un barrio de trabajadores y pescadores, y hoy en día es uno de los lugares más
+        vibrantes y auténticos de la ciudad amurallada. Aquí podrás encontrar edificios coloniales, coloridas casas,
+        calles estrechas, plazas llenas de vida y muchos lugares para comer, beber y disfrutar de la música.
+
+        Uno de los principales atractivos del barrio de Getsemaní es su street art, que se puede encontrar en cada
+        rincón. Los murales y grafitis que adornan las paredes son una muestra del talento y la creatividad de los
+        artistas locales, y son una forma de expresión que ha sido parte de la identidad del sitio desde hace décadas.
+
+        <h3>4.Ve hasta el Cerro de La Popa</h3>
+        Una de las cosas que hacer en cartagena es definitivamente visitar el Cerro de la Popa es una actividad que no
+        te puedes perder durante tu viaje a Cartagena. Este hermoso cerro es una de las atracciones turísticas más
+        populares, gracias a sus impresionantes vistas panorámicas, su rica historia y su impresionante arquitectura.
+
+        El Cerro de la Popa es el punto más alto de Cartagena de Indias, y se encuentra a unos 150 metros sobre el nivel
+        del mar. Desde su cima se pueden contemplar vistas impresionantes de la ciudad, sus murallas, las aguas Caribes
+        y sus alrededores. Es un lugar perfecto para tomar fotografías y disfrutar de la belleza natural de la región.
+
+        Además de sus vistas, también tiene una rica historia que se remonta al siglo XVII. En la cima del cerro se
+        encuentra el Convento de La Popa, una construcción colonial que data del siglo XVII. El convento fue fundado por
+        los Agustinos Recoletos y es un ejemplo de la arquitectura colonial española en la región.
+
+        <h3>5.Visita la Isla del Rosario y haz esnórquel en un arrecife de coral</h3>
+        Una de las cosas que hacer en cartagena es sin duda alguna visitar las Islas del Rosario es una actividad que no
+        puedes perderte durante tu viaje a Cartagena de Indias. Esta hermosa isla se encuentra a unos 35 kilómetros al
+        sur de la ciudad, y es un destino perfecto para disfrutar de hermosas playas, hacer snorkel y bucear.
+
+        La Isla del Rosario forma parte del Parque Nacional Natural Corales del Rosario y San Bernardo, que es un área
+        protegida de gran belleza natural y diversidad marina. El parque cuenta con hermosas playas de arena blanca y
+        aguas cristalinas.
+        </p>
+
       </div>
       <div class="col">
         <div class="card h-100">
-            <img src="/img/boquilla kitesurf.jpg" class="card-img-top" alt="Tour por la Ciudad Amurallada">
-            <div class="card-body">
-                <h5 class="card-title">Kitesurf en las Playas de La Boquilla</h5>
-                <p class="card-text">Disfruta de la adrenalina del kitesurf en una de las playas más populares para deportes acuáticos.</p>
-                <a href="#" class="btn btn-primary">Más Información</a>
-            </div> 
-        </div>     
-    </div>
-    <div class="col">
-      <div class="card h-100">
+          <img src="/img/tour.jpg" class="card-img-top" alt="Tour por la Ciudad Amurallada">
+          <div class="card-body">
+            <h5 class="card-title">Tour por la Ciudad Amurallada</h5>
+            <p class="card-text">Explora la historia colonial de Cartagena con un recorrido guiado por sus calles
+              empedradas.</p>
+            <a href="#" class="btn btn-primary">Más Información</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="/img/boquilla kitesurf.jpg" class="card-img-top" alt="Tour por la Ciudad Amurallada">
+          <div class="card-body">
+            <h5 class="card-title">Kitesurf en las Playas de La Boquilla</h5>
+            <p class="card-text">Disfruta de la adrenalina del kitesurf en una de las playas más populares para deportes
+              acuáticos.</p>
+            <a href="#" class="btn btn-primary">Más Información</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
           <img src="/img/lancha.jpg" class="card-img-top" alt="Tour por la Ciudad Amurallada">
           <div class="card-body">
-              <h5 class="card-title">Tour en Lancha a Playa Blanca</h5>
-              <p class="card-text">Escápate a una de las playas más hermosas de Cartagena con arena blanca y aguas cristalinas.</p>
-              <a href="#" class="btn btn-primary">Más Información</a>
-          </div> 
-      </div>     
-  </div>
-  <div class="col">
-    <div class="card h-100">
-        <img src="/img/buceo.avif" class="card-img-top" alt="Tour por la Ciudad Amurallada">
-        <div class="card-body">
-            <h5 class="card-title">Snorkel y Buceo en las Islas del Rosario</h5>
-            <p class="card-text">Explora la vida marina en las aguas tropicales que rodean este hermoso archipiélago.</p>
+            <h5 class="card-title">Tour en Lancha a Playa Blanca</h5>
+            <p class="card-text">Escápate a una de las playas más hermosas de Cartagena con arena blanca y aguas
+              cristalinas.</p>
             <a href="#" class="btn btn-primary">Más Información</a>
-        </div> 
-    </div>     
-  </div>
-      </div>
-
-      <div class="row mt-4">
-        <div class="col-md-12">
-          <h2 class="mb-3 text-center">Gastronomía</h2>
-          <p>
-            La gastronomía de Cartagena es una mezcla de influencias españolas,
-            africanas y caribeñas. La ciudad es famosa por su comida típica,
-            como la arepa, la empanada y la tajada.
-          </p>
-        </div>
-      </div>
-
-      <div class="row mt-4">
-        <div class="col-md-12">
-          <h2 class="mb-3 text-center">Transporte</h2>
-          <p>
-            Cartagena tiene una amplia gama de transporte público y privado para
-            los turistas. La ciudad tiene varios aeropuertos, con vuelos
-            internacionales que conectan Cartagena con varios destinos del
-            mundo.
-            
-          </p>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-              <img src="/img/aeropuerto.jpg" class="card-img-top" alt="Aeropuerto Internacional Rafael Núñez">
-              <div class="card-body">
-                  <h5 class="card-title">Aeropuerto Internacional Rafael Núñez</h5>
-                  <p class="card-text">Principal punto de acceso para turistas internacionales, con vuelos desde América y Europa.</p>
-              </div>
           </div>
+        </div>
       </div>
       <div class="col">
         <div class="card h-100">
-            <img src="/img/transcaribe.jpg" class="card-img-top" alt="Transcaribe">
-            <div class="card-body">
-                <h5 class="card-title">Transcaribe</h5>
-                <p class="card-text">El sistema de transporte masivo de Cartagena conecta las principales áreas de la ciudad de forma rápida y eficiente.</p>
-            </div>
+          <img src="/img/buceo.avif" class="card-img-top" alt="Tour por la Ciudad Amurallada">
+          <div class="card-body">
+            <h5 class="card-title">Snorkel y Buceo en las Islas del Rosario</h5>
+            <p class="card-text">Explora la vida marina en las aguas tropicales que rodean este hermoso archipiélago.
+            </p>
+            <a href="#" class="btn btn-primary">Más Información</a>
+          </div>
         </div>
+      </div>
     </div>
-    <div class="col">
-      <div class="card h-100">
+
+    <div class="row mt-4">
+      <div class="col-md-12">
+        <h2 class="mb-3 text-center">Gastronomía</h2>
+        <p>
+          La gastronomía de Cartagena es una mezcla de sabores intensos que se cultivan en sus tierras y producen
+          sensaciones indescriptibles al combinarse con algunas aves, carnes rojas y productos de la ciénaga, los ríos y
+          el mar. ¡Cada bocado es una fiesta en el paladar!
+
+          La cocina cartagenera tiene un origen popular, que se basa en frituras, arroces, sopas y guisos; pero también
+          es una cocina que adopta elementos de otras zonas del mundo, como las carnes cocidas a fuego bajo, con
+          verduras, y que tienen como base salsas deliciosas, relucientes y sabores fuertes.
+
+          Una de las tradiciones de la cocina cartagenera es conocida como el arroz con carne en tabaquito: pequeños
+          trocitos de carne salada y guisada que al mezclarlos con arroz crean un plato muy agradable, de texturas y
+          aromas profundos.
+
+          También podrás encontrar empanadas de carne y la famosa arepa de huevo; sopas como el sancocho y el mote de
+          queso, que contiene ñame, son algunas delicias que se pueden probar en Cartagena y sus alrededores.
+        </p>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-md-12">
+        <h2 class="mb-3 text-center">Transporte</h2>
+        <p>
+          Cartagena tiene una amplia gama de transporte público y privado para
+          los turistas. La ciudad tiene varios aeropuertos, con vuelos
+          internacionales que conectan Cartagena con varios destinos del
+          mundo.
+
+        </p>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="/img/aeropuerto.jpg" class="card-img-top" alt="Aeropuerto Internacional Rafael Núñez">
+          <div class="card-body">
+            <h5 class="card-title">Aeropuerto Internacional Rafael Núñez</h5>
+            <p class="card-text">Principal punto de acceso para turistas internacionales, con vuelos desde América y
+              Europa.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="/img/transcaribe.jpg" class="card-img-top" alt="Transcaribe">
+          <div class="card-body">
+            <h5 class="card-title">Transcaribe</h5>
+            <p class="card-text">El sistema de transporte masivo de Cartagena conecta las principales áreas de la ciudad
+              de forma rápida y eficiente.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
           <img src="/img/taxis.jpg" class="card-img-top" alt="Taxis en Cartagena">
           <div class="card-body">
-              <h5 class="card-title">Taxis y Transporte Privado</h5>
-              <p class="card-text">Una red extensa de taxis y transporte privado está disponible para mayor comodidad de los turistas.</p>
+            <h5 class="card-title">Taxis y Transporte Privado</h5>
+            <p class="card-text">Una red extensa de taxis y transporte privado está disponible para mayor comodidad de
+              los turistas.</p>
           </div>
+        </div>
       </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-        <img src="/img/bici.jpg" class="card-img-top" alt="Alquiler de Bicicletas o Scooters">
-        <div class="card-body">
+      <div class="col">
+        <div class="card h-100">
+          <img src="/img/bici.jpg" class="card-img-top" alt="Alquiler de Bicicletas o Scooters">
+          <div class="card-body">
             <h5 class="card-title">Alquiler de Bicicletas o Scooters</h5>
-            <p class="card-text">Disfruta de una experiencia ecológica y divertida recorriendo Cartagena en bicicleta o scooter.</p>
+            <p class="card-text">Disfruta de una experiencia ecológica y divertida recorriendo Cartagena en bicicleta o
+              scooter.</p>
+          </div>
         </div>
+      </div>
+
+
+
     </div>
-</div>
 
-  
-    
-      </div>
-
-      <div class="container-fluid">
-        <h1 class="mb-3 text-center">Galería de imágenes</h1>
-        <div class="row">
-          <div class="column">
-            <img alt="imagen Muralla" src="/img/muralla.jpg" />
-            <img alt="centro" src="/img/centro.jpg" />
-            <img alt="centro 2" src="/img/centro2.jpg" />
-            <img alt="centro noche" src="/img/centro_noche.jpg" />
-          </div>
-          <div class="column">
-            <img alt="bahia" src="/img/bahia.jpg" />
-            <img alt="lago" src="/img/lago.jpg" />
-            <img alt="edificios" src="/img/edificios.jpg" />
-            <img alt="edificios 2" src="/img/edificios2.jpg" />
-          </div>
-          <div class="column">
-            <img alt="pescado" src="/img/comida.jpg" />
-            <img alt="comida" src="/img/transporte.jpg" />
-            <img alt="baile" src="/img/baile.jpg" />
-            <img alt="general" src="/img/general.jpg" />
-          </div>
-          <div class="column">
-            <img alt="fraternidad" src="/img/fraternidad.jpg" />
-            <img alt="lago" src="/img/lago.jpg" />
-            <img alt="castillo" src="/img/castillo.jpg" />
-            <img alt="principal" src="/img/principal.jpg" />
-          </div>
+    <div class="container-fluid">
+      <h1 class="mb-3 text-center">Galería de imágenes</h1>
+      <div class="row">
+        <div class="column">
+          <img alt="imagen Muralla" src="/img/muralla.jpg" />
+          <img alt="centro" src="/img/centro.jpg" />
+          <img alt="centro 2" src="/img/centro2.jpg" />
+          <img alt="centro noche" src="/img/centro_noche.jpg" />
         </div>
-      </div>
-
-      <h2 class="mb-4 text-center">Reseñas</h2>
-      <div class="row mt-4">
-        
-        <div class="col-md-3 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <div>
-                <h5 class="card-title">@JuanGomez24</h5>
-              </div>
-              <img
-                src="/img/icono2.jpg"
-                class="card-img-top"
-                alt="Gato con una reseña positiva"
-                style="height: 12rem"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Un paraíso escondido a solo 45 minutos de Cartagena. Playa Blanca ofrece aguas cristalinas y arenas blancas perfectas para relajarse. 
-                  El ambiente tranquilo y la belleza natural hacen de este lugar un destino imperdible para los amantes de la playa. 
-                  ¡Ideal para desconectar del bullicio de la ciudad!
-                </p>
-                <div class="rating">
-                  <i class="bi bi-star-fill star" style="color: gold"></i>
-                  <i class="bi bi-star-fill star" style="color: gold"></i>
-                  <i class="bi bi-star-fill star" style="color: gold"></i>
-                  <i class="bi bi-star-fill star" style="color: gold"></i>
-                  <i class="bi bi-star-fill star" style="color: gold;"></i>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="column">
+          <img alt="bahia" src="/img/bahia.jpg" />
+          <img alt="lago" src="/img/lago.jpg" />
+          <img alt="edificios" src="/img/edificios.jpg" />
+          <img alt="edificios 2" src="/img/edificios2.jpg" />
         </div>
-
-        <div class="col-md-3 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <div>
-                <h5 class="card-title">@AnaMartinez89</h5>
-              </div>
-              <img
-                src="/img/icono3.jpg"
-                class="card-img-top"
-                alt="foto del mar"
-                style="height: 12rem"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Imponente y majestuoso, el Castillo San Felipe de Barajas es una de las estructuras coloniales más fascinantes de Cartagena. 
-                  Recorrer sus túneles y explorar su historia es una experiencia inolvidable. La vista panorámica de la ciudad desde la cima es simplemente espectacular.
-                </p>
-                <div class="rating">
-                  <i class="bi bi-star-fill star" style="color: gold"></i>
-                  <i class="bi bi-star-fill star" style="color: gold"></i>
-                  <i class="bi bi-star-fill star" style="color: gold"></i>
-                  <i class="bi bi-star-fill star" style="color: gold"></i>
-                  <i class="bi bi-star-fill star" style="color: gold;"></i>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="column">
+          <img alt="pescado" src="/img/comida.jpg" />
+          <img alt="comida" src="/img/transporte.jpg" />
+          <img alt="baile" src="/img/baile.jpg" />
+          <img alt="general" src="/img/general.jpg" />
         </div>
-
-        <div class="col-md-3 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <div>
-                <h5 class="card-title">@CarlosTechie</h5>
-              </div>
-              <img
-                src="/img/icono.jpg"
-                class="card-img-top"
-                alt="Panda con una reseña positiva"
-                style="height: 12rem"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Cartagena es sinónimo de historia, y la Ciudad Amurallada es el corazón de esa historia. Pasear por sus calles adoquinadas, rodeado de coloridos balcones y vibrante arquitectura colonial, te transporta en el tiempo. 
-                  Aquí cada rincón cuenta una historia única. Perfecto para disfrutar de una tarde cultural y romántica.
-                </p>
-                <div class="rating">
-                  <i class="bi bi-star-fill star" style="color: gold"></i>
-                  <i class="bi bi-star-fill star" style="color: gold"></i>
-                  <i class="bi bi-star-fill star" style="color: gold"></i>
-                  <i class="bi bi-star-fill star" style="color: gold"></i>
-                  <i class="bi bi-star-fill star" style="color: gold;"></i>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="column">
+          <img alt="fraternidad" src="/img/fraternidad.jpg" />
+          <img alt="lago" src="/img/lago.jpg" />
+          <img alt="castillo" src="/img/castillo.jpg" />
+          <img alt="principal" src="/img/principal.jpg" />
         </div>
-
-        <div class="col-md-3 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <div>
-                <h5 class="card-title">@gato1404</h5>
-              </div>
-              <img
-                src="/img/foto perfil gato.jpg"
-                class="card-img-top"
-                alt="Gato serio con una reseña positiva"
-                style="height: 12rem"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Si te gusta la naturaleza, la Isla del Rosario es un escape perfecto para disfrutar del mar Caribe en su máxima expresión. 
-                  Con actividades como snorkel, buceo y recorridos en bote, te sumergirás en la biodiversidad marina. Un día en esta isla es sin duda una experiencia rejuvenecedora.
-                </p>
-                <div class="rating">
-                  <i class="bi bi-star-fill star" style="color: gold"></i>
-                  <i class="bi bi-star-fill star" style="color: gold"></i>
-                  <i class="bi bi-star-fill star" style="color: gold"></i>
-                  <i class="bi bi-star-fill star" style="color: gold"></i>
-                  <i class="bi bi-star-fill star"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
 
-    <footer class="bg-dark text-white pt-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h5>Sobre nosotros</h5>
-            <p>Somos una empresa dedicada a brindar los mejores servicios para nuestros clientes.</p>
-          </div>
-          <div class="col-md-4">
-            <h5>Enlaces útiles</h5>
-            <ul class="list-unstyled">
-              <li><a href="#" class="text-white">Inicio</a></li>
-              <li><a href="#" class="text-white">Servicios</a></li>
-              <li><a href="#" class="text-white">Contacto</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h5>Suscríbete</h5>
-            <form>
-              <div class="mb-3">
-                <input type="email" class="form-control" placeholder="Correo electrónico">
+    <h2 class="mb-4 text-center">Reseñas</h2>
+    <div class="row mt-4">
+
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <div>
+              <h5 class="card-title">@JuanGomez24</h5>
+            </div>
+            <img src="/img/icono2.jpg" class="card-img-top" alt="Gato con una reseña positiva" style="height: 12rem" />
+            <div class="card-body">
+              <p class="card-text">
+                Un paraíso escondido a solo 45 minutos de Cartagena. Playa Blanca ofrece aguas cristalinas y arenas
+                blancas perfectas para relajarse.
+                El ambiente tranquilo y la belleza natural hacen de este lugar un destino imperdible para los amantes de
+                la playa.
+                ¡Ideal para desconectar del bullicio de la ciudad!
+              </p>
+              <div class="rating">
+                <i class="bi bi-star-fill star" style="color: gold"></i>
+                <i class="bi bi-star-fill star" style="color: gold"></i>
+                <i class="bi bi-star-fill star" style="color: gold"></i>
+                <i class="bi bi-star-fill star" style="color: gold"></i>
+                <i class="bi bi-star-fill star" style="color: gold;"></i>
               </div>
-              <button type="submit" class="btn btn-primary">Suscribirse</button>
-            </form>
+            </div>
           </div>
-        </div>
-        
-        <div class="row text-center py-3">
-          <div class="col">
-            <h5>Redes Sociales</h5>
-            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="row text-center py-3">
-          <div class="col">
-            <h5>Integrantes del equipo</h5>
-            <p>Emerson Albornoz</p>
-            <p><a href="https://files.catbox.moe/ejogho.jpg" class="text-white" target="_blank">Hoja de vida</a></p>
-            <p>Brayan Huerfano</p>
-            <p><a href="https://files.catbox.moe/8hp7xv.jpg" class="text-white" target="_blank">Hoja de vida</a></p>
-            <p>Newman Daza</p>
-            <p><a href="link_a_hoja_de_vida_newman" class="text-white" target="_blank">Hoja de vida</a></p>
-            <p>Jose Luis Vallejo</p>
-            <p><a href="https://files.catbox.moe/o4o0fz.jpg" class="text-white" target="_blank">Hoja de vida</a></p>
-          </div>
-        </div>
-    
-        <div class="text-center py-3">
-          <p class="mb-0">&copy; 2024 Mi Empresa. Todos los derechos reservados.</p>
         </div>
       </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <div>
+              <h5 class="card-title">@AnaMartinez89</h5>
+            </div>
+            <img src="/img/icono3.jpg" class="card-img-top" alt="foto del mar" style="height: 12rem" />
+            <div class="card-body">
+              <p class="card-text">
+                Imponente y majestuoso, el Castillo San Felipe de Barajas es una de las estructuras coloniales más
+                fascinantes de Cartagena.
+                Recorrer sus túneles y explorar su historia es una experiencia inolvidable. La vista panorámica de la
+                ciudad desde la cima es simplemente espectacular.
+              </p>
+              <div class="rating">
+                <i class="bi bi-star-fill star" style="color: gold"></i>
+                <i class="bi bi-star-fill star" style="color: gold"></i>
+                <i class="bi bi-star-fill star" style="color: gold"></i>
+                <i class="bi bi-star-fill star" style="color: gold"></i>
+                <i class="bi bi-star-fill star" style="color: gold;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <div>
+              <h5 class="card-title">@CarlosTechie</h5>
+            </div>
+            <img src="/img/icono.jpg" class="card-img-top" alt="Panda con una reseña positiva" style="height: 12rem" />
+            <div class="card-body">
+              <p class="card-text">
+                Cartagena es sinónimo de historia, y la Ciudad Amurallada es el corazón de esa historia. Pasear por sus
+                calles adoquinadas, rodeado de coloridos balcones y vibrante arquitectura colonial, te transporta en el
+                tiempo.
+                Aquí cada rincón cuenta una historia única. Perfecto para disfrutar de una tarde cultural y romántica.
+              </p>
+              <div class="rating">
+                <i class="bi bi-star-fill star" style="color: gold"></i>
+                <i class="bi bi-star-fill star" style="color: gold"></i>
+                <i class="bi bi-star-fill star" style="color: gold"></i>
+                <i class="bi bi-star-fill star" style="color: gold"></i>
+                <i class="bi bi-star-fill star" style="color: gold;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <div>
+              <h5 class="card-title">@gato1404</h5>
+            </div>
+            <img src="/img/foto perfil gato.jpg" class="card-img-top" alt="Gato serio con una reseña positiva"
+              style="height: 12rem" />
+            <div class="card-body">
+              <p class="card-text">
+                Si te gusta la naturaleza, la Isla del Rosario es un escape perfecto para disfrutar del mar Caribe en su
+                máxima expresión.
+                Con actividades como snorkel, buceo y recorridos en bote, te sumergirás en la biodiversidad marina. Un
+                día en esta isla es sin duda una experiencia rejuvenecedora.
+              </p>
+              <div class="rating">
+                <i class="bi bi-star-fill star" style="color: gold"></i>
+                <i class="bi bi-star-fill star" style="color: gold"></i>
+                <i class="bi bi-star-fill star" style="color: gold"></i>
+                <i class="bi bi-star-fill star" style="color: gold"></i>
+                <i class="bi bi-star-fill star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white pt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Sobre nosotros</h5>
+          <p>Somos una empresa dedicada a brindar los mejores servicios para nuestros clientes.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Enlaces útiles</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Inicio</a></li>
+            <li><a href="#" class="text-white">Servicios</a></li>
+            <li><a href="#" class="text-white">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Suscríbete</h5>
+          <form>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Correo electrónico">
+            </div>
+            <button type="submit" class="btn btn-primary">Suscribirse</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="row text-center py-3">
+        <div class="col">
+          <h5>Redes Sociales</h5>
+          <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="row text-center py-3">
+        <div class="col">
+          <h5>Integrantes del equipo</h5>
+          <p>Emerson Albornoz</p>
+          <p><a href="https://files.catbox.moe/ejogho.jpg" class="text-white" target="_blank">Hoja de vida</a></p>
+          <p>Brayan Huerfano</p>
+          <p><a href="https://files.catbox.moe/8hp7xv.jpg" class="text-white" target="_blank">Hoja de vida</a></p>
+          <p>Newman Daza</p>
+          <p><a href="link_a_hoja_de_vida_newman" class="text-white" target="_blank">Hoja de vida</a></p>
+          <p>Jose Luis Vallejo</p>
+          <p><a href="https://files.catbox.moe/o4o0fz.jpg" class="text-white" target="_blank">Hoja de vida</a></p>
+        </div>
+      </div>
+
+      <div class="text-center py-3">
+        <p class="mb-0">&copy; 2024 Mi Empresa. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
